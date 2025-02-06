@@ -1,97 +1,41 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+React Native Timer App
+A fully functional React Native Timer App that allows users to create, manage, and track timers with category grouping, bulk actions, and progress tracking. The app also supports light and dark themes, with the selected theme being saved using AsyncStorage.
 
-# Getting Started
+Features:
+    Create & Manage Timers: Add, start, pause, reset, and delete timers.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+    Category-based Timer Grouping: Timers are grouped by category (Workout, Study, Break).
 
-## Step 1: Start Metro
+    Bulk Actions: Start, Pause, and Reset all timers within a category.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+    Progress Visualization: Displays remaining time and status.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+    Timer History: Completed timers are logged in a history screen.
 
-```sh
-# Using npm
-npm start
+    Theme Toggle (Light/Dark Mode): Theme selection is saved using AsyncStorage.
 
-# OR using Yarn
-yarn start
-```
+    Data Persistence: Timers and history are stored using AsyncStorage.
 
-## Step 2: Build and run your app
+    Export Timer History: Save and share history as a JSON file.
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
 
-### Android
+Tech Stack:
+    React Native - Framework for building mobile apps.
 
-```sh
-# Using npm
-npm run android
+    React Navigation - Handles screen transitions.
 
-# OR using Yarn
-yarn android
-```
+    AsyncStorage - Saves timer and history data persistently.
 
-### iOS
+    React Native Paper - UI components for better styling.
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+    React Native Vector Icons - For interactive UI elements.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+    React Native FS & Share - For exporting timer history as a file.
 
-```sh
-bundle install
-```
 
-Then, and every time you update your native dependencies, run:
+Installation & Setup:
 
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+    git clone 'https://github.com/koushal9800/TimerApp.git'
+    npm install
+    npx react-native run-android
+    
